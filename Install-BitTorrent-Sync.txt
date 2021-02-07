@@ -7,10 +7,10 @@
 
 
 Add Repo:
-echo 'deb http://linux-packages.getsync.com/btsync/deb btsync non-free' >> /etc/apt/sources.list
+echo 'deb http://linux-packages.resilio.com/resilio-sync/deb resilio-sync non-free' >> /etc/apt/sources.list
 
 Add Key:
-wget -qO - http://linux-packages.getsync.com/btsync/key.asc | apt-key add -
+curl -L https://linux-packages.resilio.com/resilio-sync/key.asc | apt-key add
 
 Update:
 apt-get update

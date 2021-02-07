@@ -18,16 +18,17 @@ apt-get update
 Install:
 apt-get install resilio-sync
 
-
-
 Configure Sync Folder:
 mkdir /media/sync
 
 Set Owner:
-chown {SYNCUSER}:{SYNCUSER} /media/sync
+chown btsync:{SYNCUSER} /media/sync/
 
 Set Permissions
 chmod 2775 /media/sync
+
+Add User to Group:
+usermod -a -G btsync {SYNCUSER}
 
 
 

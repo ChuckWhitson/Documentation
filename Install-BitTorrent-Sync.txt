@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+
+Add Repo:
+echo 'deb http://linux-packages.getsync.com/btsync/deb btsync non-free' >> /etc/apt/sources.list
+
+Add Key:
+wget -qO - http://linux-packages.getsync.com/btsync/key.asc | apt-key add -
+
+Update:
+apt-get update
+
+Install:
+apt-get install btsync
+
+
+
